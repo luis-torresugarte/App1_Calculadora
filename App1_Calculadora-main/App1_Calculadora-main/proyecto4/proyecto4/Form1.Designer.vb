@@ -44,6 +44,9 @@ Partial Class Form1
         Me.boton8 = New System.Windows.Forms.Button()
         Me.boton7 = New System.Windows.Forms.Button()
         Me.borrar = New System.Windows.Forms.Button()
+        Me.botonpunto = New System.Windows.Forms.Button()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.SuspendLayout()
         '
         'ye
@@ -68,7 +71,7 @@ Partial Class Form1
         'botonsumar
         '
         Me.botonsumar.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.botonsumar.Location = New System.Drawing.Point(373, 12)
+        Me.botonsumar.Location = New System.Drawing.Point(505, 12)
         Me.botonsumar.Name = "botonsumar"
         Me.botonsumar.Size = New System.Drawing.Size(126, 67)
         Me.botonsumar.TabIndex = 2
@@ -125,7 +128,7 @@ Partial Class Form1
         'botonrestar
         '
         Me.botonrestar.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.botonrestar.Location = New System.Drawing.Point(505, 12)
+        Me.botonrestar.Location = New System.Drawing.Point(637, 12)
         Me.botonrestar.Name = "botonrestar"
         Me.botonrestar.Size = New System.Drawing.Size(126, 67)
         Me.botonrestar.TabIndex = 8
@@ -135,7 +138,7 @@ Partial Class Form1
         'botonmultiplicar
         '
         Me.botonmultiplicar.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.botonmultiplicar.Location = New System.Drawing.Point(637, 12)
+        Me.botonmultiplicar.Location = New System.Drawing.Point(505, 85)
         Me.botonmultiplicar.Name = "botonmultiplicar"
         Me.botonmultiplicar.Size = New System.Drawing.Size(126, 67)
         Me.botonmultiplicar.TabIndex = 9
@@ -145,7 +148,7 @@ Partial Class Form1
         'botondividir
         '
         Me.botondividir.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.botondividir.Location = New System.Drawing.Point(505, 85)
+        Me.botondividir.Location = New System.Drawing.Point(637, 85)
         Me.botondividir.Name = "botondividir"
         Me.botondividir.Size = New System.Drawing.Size(126, 67)
         Me.botondividir.TabIndex = 10
@@ -262,12 +265,47 @@ Partial Class Form1
         Me.borrar.Text = "X"
         Me.borrar.UseVisualStyleBackColor = True
         '
+        'botonpunto
+        '
+        Me.botonpunto.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.botonpunto.Location = New System.Drawing.Point(456, 373)
+        Me.botonpunto.Name = "botonpunto"
+        Me.botonpunto.Size = New System.Drawing.Size(71, 54)
+        Me.botonpunto.TabIndex = 22
+        Me.botonpunto.Text = "."
+        Me.botonpunto.UseVisualStyleBackColor = True
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Location = New System.Drawing.Point(305, 77)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(90, 17)
+        Me.RadioButton1.TabIndex = 23
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "RadioButton1"
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Location = New System.Drawing.Point(305, 143)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(90, 17)
+        Me.RadioButton2.TabIndex = 24
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "RadioButton2"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Lavender
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.RadioButton2)
+        Me.Controls.Add(Me.RadioButton1)
+        Me.Controls.Add(Me.botonpunto)
         Me.Controls.Add(Me.borrar)
         Me.Controls.Add(Me.boton7)
         Me.Controls.Add(Me.boton8)
@@ -319,4 +357,7 @@ Partial Class Form1
     Friend WithEvents boton8 As Button
     Friend WithEvents boton7 As Button
     Friend WithEvents borrar As Button
+    Friend WithEvents botonpunto As Button
+    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents RadioButton2 As RadioButton
 End Class
